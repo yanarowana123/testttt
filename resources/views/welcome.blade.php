@@ -432,7 +432,7 @@
                                        x-model="formData.origin_url">
                             </div>
                             <div class="mb-4">
-                                <span x-text="short_url"></span>
+                                <a :href="short_url" x-text="short_url"></a>
                             </div>
                             <div class="mb-4">
                                 <span x-text="error" class="text-red-500"></span>
