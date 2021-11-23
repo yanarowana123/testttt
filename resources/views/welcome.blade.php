@@ -460,7 +460,8 @@
             error:'',
 
             async submitData() {
-
+                this.error = '';
+                this.short_url = '';
                 let response = await fetch('/api/shorten_url', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
